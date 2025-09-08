@@ -2,10 +2,10 @@
 
 export function MainVisualizer() {
   return (
-    <div className="absolute left-1/2 ">
-      <div className="relative">
+    <div className="relative h-full w-full">
+      <div className="relative h-full w-full">
         {/* Main Circle Visualizer */}
-        <svg width="300" height="300" viewBox="0 0 300 300" className="drop-shadow-lg">
+        <svg width="100%" height="100%" viewBox="0 0 300 300" className="drop-shadow-lg">
           {/* Outer glow effect */}
           <defs>
             <filter id="glow">

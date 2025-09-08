@@ -28,7 +28,7 @@ export function FullComposition() {
     titleValue: "WINAMP ONLINE",
     timeValue: new Date().getFullYear().toString(),
     timeFormat: "year",
-    fontFamily: "font-sans",
+    fontFamily: "font-mono",
   })
 
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false)
@@ -45,6 +45,7 @@ export function FullComposition() {
 
       {/* Main Content Area */}
       <div className={`h-full transition-all duration-300 ${sidebarCollapsed ? "ml-16" : "ml-80"}`}>
+        
         {/* Title Display - Top Right */}
         <TitleDisplay
           value={controls.titleValue}

@@ -4,6 +4,8 @@
 import iconUrl from "../static/logo-1.svg"
 import iconPng from "../static/logo-1.png"
 import Image from "next/image"
+// import { GeistMono } from "geist/font/mono"
+// import { GeistSans } from "geist/font/sans"
 
 interface TitleDisplayProps {
   value: string
@@ -28,7 +30,7 @@ export function TitleDisplay({ value, size, color, padding, fontFamily }: TitleD
       }}
       >
       <div
-        className={`${fontFamily} font-bold text-balance font spin`}
+        className={`${fontFamily} font-bold text-balance spin`}
         style={{
           color: color,
           textShadow: "0 2px 4px rgba(0,0,0,0.1)",

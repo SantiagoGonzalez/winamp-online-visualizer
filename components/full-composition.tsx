@@ -5,6 +5,9 @@ import { MainVisualizer } from "./main-visualizer"
 import { TitleDisplay } from "./title-display"
 import { TimeDisplay } from "./time-display"
 import { OptionsSidebar } from "./options-sidebar"
+import { YoutubeVisualizer } from "./youtube-visualizer"
+import { DitherVisualizer } from "./dither-visualizer"
+
 
 export interface VisualizerControls {
   titlePadding: number
@@ -66,7 +69,9 @@ export function FullComposition() {
         />
 
         {/* Main Visualizer - Bottom Center */}
-        <MainVisualizer />
+        {/* <MainVisualizer /> */}
+        <DitherVisualizer />
+        {/* <YoutubeVisualizer /> */}
       </div>
     </div>
   )
